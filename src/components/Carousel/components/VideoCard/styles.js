@@ -8,8 +8,8 @@ export const VideoCardContainer = styled.a`
   cursor: pointer;
   color: white;
   flex: 0 0 298px;
-  width: 298px;
-  height: 197px;
+  width: 315px;
+  height: 175px;
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
@@ -17,7 +17,7 @@ export const VideoCardContainer = styled.a`
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 16px;
+  padding: 14px;
 
   transition: opacity .3s;
   &:hover,

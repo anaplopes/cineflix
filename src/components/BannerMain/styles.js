@@ -9,6 +9,7 @@ export const ContentAreaContainer = styled.section`
   justify-content: center;
   position: relative;
   z-index: 10;
+
   @media (max-width: 800px) {
     padding-top: 100px;
     flex-direction: column;
@@ -19,6 +20,7 @@ ContentAreaContainer.Item = styled.div`
   width: 50%;
   display: inline-block;
   margin-bottom: 50px;
+
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -54,7 +56,7 @@ ContentAreaContainer.Description = styled.p`
 ContentAreaContainer.Title = styled.h2`
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 32px;
@@ -66,7 +68,7 @@ ContentAreaContainer.Title = styled.h2`
 `;
 
 export const BannerMainContainer = styled.section`
-  height: 80vh;
+  height: 65vh;
   position: relative;
   color: #fff;
   background-image: ${({ backgroundImage }) => `url(${backgroundImage})`}; 

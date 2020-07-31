@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 
 const Button = styled.button`
-    color: var(--white);
-    border: 1px solid var(--white);
+    color: var(--lilac);
+    border: 1px solid var(--lilac);
     box-sizing: border-box;
     cursor: pointer;
-    padding: 16px 20px;
+    padding: 10px 15px;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
     border-radius: 5px;
     text-decoration: none;

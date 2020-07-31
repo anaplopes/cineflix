@@ -23,8 +23,8 @@
     padding-left: 5%;
     padding-right: 5%;
   
-    background: var(--black);
-    border-bottom: 2px solid var(--primary);
+    background: var(--yellow);
+    border-bottom: 2px solid var(--lilac);
   }
   body {
     --bodyPaddingTop: 94px;
