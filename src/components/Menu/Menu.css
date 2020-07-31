@@ -23,8 +23,8 @@
     padding-left: 5%;
     padding-right: 5%;
   
-    background: var(--yellow);
-    border-bottom: 2px solid var(--lilac);
+    background: var(--backgroundHeader);
+    border-bottom: 2px solid var(--itemHeader);
   }
   body {
     --bodyPaddingTop: 94px;
@@ -67,7 +67,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: var(--primary);
+      background: var(--itemHeader);
       border-radius: 0;
       border: 0;
       text-align: center;
