@@ -28,4 +28,10 @@ export const VideoCardContainer = styled.a`
   &:not(:first-child) {
     margin-left: 20px;
   }
+
+  @media (max-width: 800px) {
+    width: 325px;
+    padding: 14px;
+    margin-left: 10px;
+  }
 `;

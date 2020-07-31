@@ -17,7 +17,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       url={image}
       href={videoURL}
       target="_blank"
-      style={{ borderColor: categoryColor || 'yellow' }}
+      style={{ borderColor: categoryColor }}
       title={videoTitle}
     />
   );
