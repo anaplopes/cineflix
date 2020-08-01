@@ -10,11 +10,9 @@
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
   --white: #FFFFFF;
-  --frontEnd: #6BD1FF;
-  --backEnd: #00C86F;
 
   --backgroundHeader: #4c5454;
-  --itemHeader: #adf7b6;
+  --itemHeader: #00C86F;
 }
 
 html,
