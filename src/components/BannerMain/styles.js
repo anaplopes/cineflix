@@ -123,7 +123,7 @@ export const WatchButton = styled.button`
   display: none;
   margin: 0 auto;
   
-  @media (max-width: 800px) {
+  /* @media (max-width: 800px) {
     display: block;
-  }
+  } */
 `;
