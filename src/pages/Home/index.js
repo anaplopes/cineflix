@@ -16,48 +16,40 @@ function Home() {
         url={dadosIniciais.categorias[0].videos[0].url}
       />
 
-      <Carousel 
+      <Carousel
         ignoreFirstVideo
         category={dadosIniciais.categorias[0]}
       />
 
       <Carousel 
-        ignoreFirstVideo
         category={dadosIniciais.categorias[1]}
       />
 
       <Carousel 
-        ignoreFirstVideo
         category={dadosIniciais.categorias[2]}
       />
 
       <Carousel 
-        ignoreFirstVideo
         category={dadosIniciais.categorias[3]}
       />
 
       <Carousel 
-        ignoreFirstVideo
         category={dadosIniciais.categorias[4]}
       />
 
       <Carousel 
-        ignoreFirstVideo
         category={dadosIniciais.categorias[5]}
       />
 
       <Carousel 
-        ignoreFirstVideo
         category={dadosIniciais.categorias[6]}
       />
 
-      <Carousel 
-        ignoreFirstVideo
+      <Carousel
         category={dadosIniciais.categorias[7]}
       />
 
-      <Carousel 
-        ignoreFirstVideo
+      <Carousel
         category={dadosIniciais.categorias[8]}
       />
 
