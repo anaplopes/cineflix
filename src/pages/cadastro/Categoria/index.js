@@ -1,9 +1,8 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+ 
 
 function CadastroCategoria() {
   const objeto = {
@@ -31,7 +30,7 @@ function CadastroCategoria() {
 
   useEffect(() => {
     if(window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias'; 
+      const URL = 'https://app-comedyflix.herokuapp.com/categorias'; 
       fetch(URL)
        .then(async (respDoServer) =>{
         if(respDoServer.ok) {
@@ -93,7 +92,7 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria, indice) => (
-          <li key={`${categoria.nome}${indice}`}>{categoria.nome}</li>
+          <li key={`${categoria.titulo}${indice}`}>{categoria.titulo}</li>
         ))}
       </ul>
     </PageDefault>

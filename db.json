@@ -2,57 +2,383 @@
     "categorias": [
         {
             "id": 1,
-            "nome": "Thiago Ventura",
+            "titulo": "Thiago Ventura",
             "descricao": "stand up comedy do humorista Thiago Ventura",
             "cor": "#00C86F"
         },
         {
             "id": 2,
-            "nome": "Afonso Padilha",
+            "titulo": "Afonso Padilha",
             "descricao": "stand up comedy do humorista Afonso Padilha",
             "cor": "#00C86F"
         },
         {
             "id": 3,
-            "nome": "Dihh Lopes",
+            "titulo": "Dihh Lopes",
             "descricao": "stand up comedy do humorista Dihh Lopes",
             "cor": "#00C86F"
         },
         {
             "id": 4,
-            "nome": "Márcio Donato",
+            "titulo": "Márcio Donato",
             "descricao": "stand up comedy do humorista Márcio Donato",
             "cor": "#00C86F"
         },
         {
             "id": 5,
-            "nome": "Fabiano Cambota",
+            "titulo": "Fabiano Cambota",
             "descricao": "stand up comedy do humorista Fabiano Cambota",
             "cor": "#00C86F"
         },
         {
             "id": 6,
-            "nome": "Bruna Louise",
+            "titulo": "Bruna Louise",
             "descricao": "stand up comedy da humorista Bruna Louise",
             "cor": "#00C86F"
         },
         {
             "id": 7,
-            "nome": "Júnior Chicó",
+            "titulo": "Júnior Chicó",
             "descricao": "stand up comedy do humorista Júnior Chicó",
             "cor": "#00C86F"
         },
         {
             "id": 8,
-            "nome": "Comedy Central A Culpa é do Cabral",
+            "titulo": "Comedy Central A Culpa é do Cabral",
             "descricao": "série de televisão humorística brasileira",
             "cor": "#00C86F"
         },
         {
             "id": 9,
-            "nome": "Fila de piadas - 2019",
+            "titulo": "Fila de piadas - 2019",
             "descricao": "Um grupo de stand up comedy composto por Dihh Lopes, Márcio Donato, Thiago Ventura e Afonso Padilha",
             "cor": "#00C86F"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "titulo": "TRETA - Prod Nick Nir",
+            "url": "https://www.youtube.com/watch?v=6Oye2RUSl34"
+        },
+        {
+            "id": 2,
+            "categoriaId": 1,
+            "titulo": "APELIDOS",
+            "url": "https://www.youtube.com/watch?v=0Pqq46BvDZo"
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+            "titulo": "O DIA QUE EU BROXEI",
+            "url": "https://www.youtube.com/watch?v=jaOEY8iRo6c&list=RDw-iWoTKh9Yc&index=4"
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+            "titulo": "ÁUDIOS DO WHATSAPP",
+            "url": "https://www.youtube.com/watch?v=8xcEzEBRt3s"
+        },
+        {
+            "id": 5,
+            "categoriaId": 1,
+            "titulo": "NEYMAR, GABRIEL JESUS E A POSE DE QUEBRADA",
+            "url": "https://www.youtube.com/watch?v=KfdKBaruZXk&list=RD8xcEzEBRt3s&index=25"
+        },
+        {
+            "id": 6,
+            "categoriaId": 2,
+            "titulo": "ANIMAIS DE ESTIMAÇÃO ALEATORIOS",
+            "url": "https://www.youtube.com/watch?v=4E4lPd_TqeI&list=RDCMUCCqoc2as2nMEXoZPlwXei4g&start_radio=1&t=42"
+        },
+        {
+            "id": 7,
+            "categoriaId": 2,
+            "titulo": "APONÊS É TUDO DOIDO",
+            "url": "https://www.youtube.com/watch?v=YTNcAQtnnjk&list=RDCMUCCqoc2as2nMEXoZPlwXei4g&index=3"
+        },
+        {
+            "id": 8,
+            "categoriaId": 2,
+            "titulo": "O BRASILEIRO ESTÁ PRONTO PRA TER ARMA?",
+            "url": "https://www.youtube.com/watch?v=6FCOgerF_jM&list=RDCMUCCqoc2as2nMEXoZPlwXei4g&index=6"
+        },
+        {
+            "id": 9,
+            "categoriaId": 2,
+            "titulo": "O DIA QUE EU QUASE MORRI",
+            "url": "https://www.youtube.com/watch?v=thJ6-Zsube8&list=RDCMUCCqoc2as2nMEXoZPlwXei4g&index=7"
+        },
+        {
+            "id": 10,
+            "categoriaId": 2,
+            "titulo": "O ENCONTRO MAIS CONFUSO DA HISTÓRIA",
+            "url": "https://www.youtube.com/watch?v=X1AuUV23WAI&list=RDCMUCCqoc2as2nMEXoZPlwXei4g&index=13"
+        },
+        {
+            "id": 11,
+            "categoriaId": 3,
+            "titulo": "HABIB'S, OUTBACK, B.K ou CHURRASCARIA?",
+            "url": "https://www.youtube.com/watch?v=yLdBPdqdlKE"
+        },
+        {
+            "id": 12,
+            "categoriaId": 3,
+            "titulo": "VIAGEM PARA O PARAGUAI COM O 4 AMIGOS",
+            "url": "https://www.youtube.com/watch?v=EqEIHJvJq_E&list=RDyLdBPdqdlKE&index=24"
+        },
+        {
+            "id": 13,
+            "categoriaId": 3,
+            "titulo": "SE VOCÊ PUDESSE...",
+            "url": "https://www.youtube.com/watch?v=F3L9LeGOpcQ&list=RDyLdBPdqdlKE&index=39"
+        },
+        {
+            "id": 14,
+            "categoriaId": 3,
+            "titulo": "40 DOENÇAS E A EVACUADA",
+            "url": "https://www.youtube.com/watch?v=6epVO19fa18&list=RDyLdBPdqdlKE&index=36"
+        },
+        {
+            "id": 15,
+            "categoriaId": 3,
+            "titulo": "O dia que tinha um bebê na plateia",
+            "url": "https://www.youtube.com/watch?v=1pwqVELONFA"
+        },
+        {
+            "id": 16,
+            "categoriaId": 4,
+            "titulo": "Desafio Comédia ao Vivo",
+            "url": "https://www.youtube.com/watch?v=F_kCI1Uu_4c&list=RDBRuESxvCpnc&index=6"
+        },
+        {
+            "id": 17,
+            "categoriaId": 4,
+            "titulo": "Viúva da Mega Sena / Copa do Mundo / Silvio Santos",
+            "url": "https://www.youtube.com/watch?v=MgyT4hEOc88&list=RDBRuESxvCpnc&index=9"
+        },
+        {
+            "id": 18,
+            "categoriaId": 4,
+            "titulo": "Morte",
+            "url": "https://www.youtube.com/watch?v=Kej-zBJ0lL4&list=RDBRuESxvCpnc&index=12"
+        },
+        {
+            "id": 19,
+            "categoriaId": 4,
+            "titulo": "Azar",
+            "url": "https://www.youtube.com/watch?v=XVvpvdLNryo&list=RDBRuESxvCpnc&index=13"
+        },
+        {
+            "id": 20,
+            "categoriaId": 4,
+            "titulo": "Elevador",
+            "url": "https://www.youtube.com/watch?v=1FQJ5O1T0RU&list=RDBRuESxvCpnc&index=41"
+        },
+        {
+            "id": 21,
+            "categoriaId": 5,
+            "titulo": "O ARALHO",
+            "url": "https://www.youtube.com/watch?v=xL_tUGtk3UA"
+        },
+        {
+            "id": 22,
+            "categoriaId": 5,
+            "titulo": "MEU PAI E O SEU OLIVIO",
+            "url": "https://www.youtube.com/watch?v=S0X8iQeaI1M"
+        },
+        {
+            "id": 23,
+            "categoriaId": 5,
+            "titulo": "MEU PAI E A CAMISINHA",
+            "url": "https://www.youtube.com/watch?v=2Dn1essQINE&list=RDCMUC1UWNQJQiIprQvSH6DDWd8Q&index=25"
+        },
+        {
+            "id": 24,
+            "categoriaId": 5,
+            "titulo": "TIO VIRGILIO",
+            "url": "https://www.youtube.com/watch?v=Z8WAz2_BrCk"
+        },
+        {
+            "id": 25,
+            "categoriaId": 5,
+            "titulo": "AMIGO DE INFÂNCIA",
+            "url": "https://www.youtube.com/watch?v=tMET1BzqqVY&list=RDCMUC1UWNQJQiIprQvSH6DDWd8Q&index=9"
+        },
+        {
+            "id": 26,
+            "categoriaId": 5,
+            "titulo": "EU SOU EVANGELICO - PARTE I",
+            "url": "https://www.youtube.com/watch?v=bdjL3EUGCNE&list=RDCMUC1UWNQJQiIprQvSH6DDWd8Q&index=11"
+        },
+        {
+            "id": 27,
+            "categoriaId": 5,
+            "titulo": "EU SOU EVANGELICO - PARTE 2",
+            "url": "https://www.youtube.com/watch?v=XIbXAeA2two&list=RDCMUC1UWNQJQiIprQvSH6DDWd8Q&index=5"
+        },
+        {
+            "id": 28,
+            "categoriaId": 5,
+            "titulo": "EU SOU EVANGELICO - PARTE 3",
+            "url": "https://www.youtube.com/watch?v=gqmogIlKf6k&list=RDCMUC1UWNQJQiIprQvSH6DDWd8Q&index=16"
+        },
+        {
+            "id": 29,
+            "categoriaId": 6,
+            "titulo": "REVEILLON DOS HUMORISTAS",
+            "url": "https://www.youtube.com/watch?v=BgXrMdt2TbM&t=40s"
+        },
+        {
+            "id": 30,
+            "categoriaId": 6,
+            "titulo": "Explica os tipos de GEMIDOS",
+            "url": "https://www.youtube.com/watch?v=fhN-qE07FmA"
+        },
+        {
+            "id": 31,
+            "categoriaId": 6,
+            "titulo": "Homem",
+            "url": "https://www.youtube.com/watch?v=EK-hgNLLvJU"
+        },
+        {
+            "id": 32,
+            "categoriaId": 6,
+            "titulo": "Instalei o Tinder",
+            "url": "https://www.youtube.com/watch?v=7T3JlgrQkuQ"
+        },
+        {
+            "id": 33,
+            "categoriaId": 6,
+            "titulo": "MULHER TEM QUE DAR EM CIMA",
+            "url": "https://www.youtube.com/watch?v=PQ7x7XE0Lp8&list=RD7T3JlgrQkuQ&index=2"
+        },
+        {
+            "id": 34,
+            "categoriaId": 6,
+            "titulo": "REALITY SHOW",
+            "url": "https://www.youtube.com/watch?v=ewLjSBfPGRE&list=RD7T3JlgrQkuQ&index=25"
+        },
+        {
+            "id": 35,
+            "categoriaId": 7,
+            "titulo": "SEGREDO DE IRMÃOS",
+            "url": "https://www.youtube.com/watch?v=MctF3tnSi9E&list=RDDt2FIc7rIe4&index=17"
+        },
+        {
+            "id": 36,
+            "categoriaId": 7,
+            "titulo": "MÃE DO BOY",
+            "url": "https://www.youtube.com/watch?v=28dVSE1r6k0&list=RDDt2FIc7rIe4&index=3"
+        },
+        {
+            "id": 37,
+            "categoriaId": 7,
+            "titulo": "MEUS AMIGOS ME LEVARAM NO P*TEIRO",
+            "url": "https://www.youtube.com/watch?v=17HCWMTYiXg&list=RDDt2FIc7rIe4&index=5"
+        },
+        {
+            "id": 38,
+            "categoriaId": 7,
+            "titulo": "TIPOS DE DANÇA NA BOATE",
+            "url": "https://www.youtube.com/watch?v=NbrvwHCXFaU&list=RDDt2FIc7rIe4&index=7"
+        },
+        {
+            "id": 39,
+            "categoriaId": 7,
+            "titulo": "COMO ACABAR COM A HOMOFOBIA",
+            "url": "https://www.youtube.com/watch?v=pAW_GJH8B-4&list=RDDt2FIc7rIe4&index=9"
+        },
+        {
+            "id": 40,
+            "categoriaId": 8,
+            "titulo": "Coxinha ou ORAL?",
+            "url": "https://www.youtube.com/watch?v=He0P2d0vUdA"
+        },
+        {
+            "id": 41,
+            "categoriaId": 8,
+            "titulo": "Balão da Música",
+            "url": "https://www.youtube.com/watch?v=ZgiDELAmgec"
+        },
+        {
+            "id": 42,
+            "categoriaId": 8,
+            "titulo": "#TrocadalhoDoCarilho",
+            "url": "https://www.youtube.com/watch?v=UdX6jqh1tAA"
+        },
+        {
+            "id": 43,
+            "categoriaId": 8,
+            "titulo": "#SurubaNãoÉBagunça",
+            "url": "https://www.youtube.com/watch?v=5lPSLa1U6FQ"
+        },
+        {
+            "id": 44,
+            "categoriaId": 8,
+            "titulo": "Quem passou VERGONHA falando INGLÊS?",
+            "url": "https://www.youtube.com/watch?v=QigxMKGMJK8"
+        },
+        {
+            "id": 45,
+            "categoriaId": 8,
+            "titulo": "Tirullipa chega com tudo no programa!",
+            "url": "https://www.youtube.com/watch?v=tBK9DDnkt18"
+        },
+        {
+            "id": 46,
+            "categoriaId": 8,
+            "titulo": "RESPONDE ou BEBE - parte 1",
+            "url": "https://www.youtube.com/watch?v=P88Yrey7oz4"
+        },
+        {
+            "id": 47,
+            "categoriaId": 8,
+            "titulo": "RESPONDE ou BEBE - parte 2",
+            "url": "https://www.youtube.com/watch?v=QZ3bc2dYKlE"
+        },
+        {
+            "id": 48,
+            "categoriaId": 8,
+            "titulo": "Na Estrada - Abre a boca e fecha os olhos",
+            "url": "https://www.youtube.com/watch?v=ixOY1Iq0VFk"
+        },
+        {
+            "id": 49,
+            "categoriaId": 8,
+            "titulo": "Quem tem a IRMÃ mais bonita?",
+            "url": "https://www.youtube.com/watch?v=UjBW9qAR7Z4"
+        },
+        {
+            "id": 50,
+            "categoriaId": 9,
+            "titulo": "#1",
+            "url": "https://www.youtube.com/watch?v=ybx6ZfYZqLw"
+        },
+        {
+            "id": 51,
+            "categoriaId": 9,
+            "titulo": "#2",
+            "url": "https://www.youtube.com/watch?v=zucV17GvxNE"
+        },
+        {
+            "id": 52,
+            "categoriaId": 9,
+            "titulo": "#3",
+            "url": "https://www.youtube.com/watch?v=vJuvnXepbqI"
+        },
+        {
+            "id": 53,
+            "categoriaId": 9,
+            "titulo": "#4",
+            "url": "https://www.youtube.com/watch?v=3aMZ9HEOi54"
+        },
+        {
+            "id": 54,
+            "categoriaId": 9,
+            "titulo": "#5",
+            "url": "https://www.youtube.com/watch?v=GgLQZFOo0-w"
         }
     ]
 }
