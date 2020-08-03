@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
@@ -28,6 +28,21 @@ function CadastroCategoria() {
       infosDoEvento.target.value
     );
   }
+
+  useEffect(() => {
+    if(window.location.href.includes('localhost')) {
+      const URL = 'http://localhost:8080/categorias'; 
+      fetch(URL)
+       .then(async (respDoServer) =>{
+        if(respDoServer.ok) {
+          const resposta = await respDoServer.json();
+          setCategorias(resposta);
+          return; 
+        }
+        throw new Error('Não foi possível pegar os dados');
+       })
+    }    
+  }, []);
 
   return (
     <PageDefault>
@@ -69,6 +84,12 @@ function CadastroCategoria() {
           <Button>Cadastrar</Button>
         </div>
       </form>
+
+      {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
 
       <ul>
         {categorias.map((categoria, indice) => (

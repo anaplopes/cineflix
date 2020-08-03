@@ -1,0 +1,58 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Thiago Ventura",
+            "descricao": "stand up comedy do humorista Thiago Ventura",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 2,
+            "nome": "Afonso Padilha",
+            "descricao": "stand up comedy do humorista Afonso Padilha",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 3,
+            "nome": "Dihh Lopes",
+            "descricao": "stand up comedy do humorista Dihh Lopes",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 4,
+            "nome": "Márcio Donato",
+            "descricao": "stand up comedy do humorista Márcio Donato",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 5,
+            "nome": "Fabiano Cambota",
+            "descricao": "stand up comedy do humorista Fabiano Cambota",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 6,
+            "nome": "Bruna Louise",
+            "descricao": "stand up comedy da humorista Bruna Louise",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 7,
+            "nome": "Júnior Chicó",
+            "descricao": "stand up comedy do humorista Júnior Chicó",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 8,
+            "nome": "Comedy Central A Culpa é do Cabral",
+            "descricao": "série de televisão humorística brasileira",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 9,
+            "nome": "Fila de piadas - 2019",
+            "descricao": "Um grupo de stand up comedy composto por Dihh Lopes, Márcio Donato, Thiago Ventura e Afonso Padilha",
+            "cor": "#00C86F"
+        }
+    ]
+}
