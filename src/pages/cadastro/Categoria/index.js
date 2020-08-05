@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
- 
+import useForm from '../../../hooks/useForm';
+import DOMINIO from '../../../config';
+
 
 function CadastroCategoria() {
   const objeto = {
@@ -11,47 +13,31 @@ function CadastroCategoria() {
     cor: '',
   };
 
+  const { handleChange, values, clearForm} = useForm(objeto);
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(objeto);
-
-  function setValue(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value
-    );
-  }
 
   useEffect(() => {
-    if(window.location.href.includes('localhost')) {
-      const URL = 'https://app-comedyflix.herokuapp.com/categorias'; 
-      fetch(URL)
-       .then(async (respDoServer) =>{
+    const URL = `${DOMINIO}/categorias`;
+    fetch(URL)
+      .then(async (respDoServer) => {
         if(respDoServer.ok) {
           const resposta = await respDoServer.json();
           setCategorias(resposta);
           return; 
         }
         throw new Error('Não foi possível pegar os dados');
-       })
-    }    
+      })
   }, []);
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria:</h1>
+      <h1>Cadastro de Categoria</h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
-        setCategorias([...categorias, valores]);
+        setCategorias([...categorias, values]);
 
-        setValue(objeto);
+        clearForm();
       }}
       >
 
@@ -59,7 +45,7 @@ function CadastroCategoria() {
           label="Nome"
           type="text"
           name="nome"
-          value={valores.nome}
+          value={values.nome}
           onChange={handleChange}
         />
 
@@ -67,7 +53,7 @@ function CadastroCategoria() {
           label="Descrição"
           type="textarea"
           name="descricao"
-          value={valores.descricao}
+          value={values.descricao}
           onChange={handleChange}
         />
 
@@ -75,7 +61,7 @@ function CadastroCategoria() {
           label="Cor"
           type="color"
           name="cor"
-          value={valores.cor}
+          value={values.cor}
           onChange={handleChange}
         />
 
@@ -91,8 +77,10 @@ function CadastroCategoria() {
       )}
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria.titulo}${indice}`}>{categoria.titulo}</li>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
+          </li>
         ))}
       </ul>
     </PageDefault>
