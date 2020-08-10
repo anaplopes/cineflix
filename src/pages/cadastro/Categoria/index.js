@@ -3,49 +3,55 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
-import DOMINIO from '../../../config';
+import { Link, useHistory } from 'react-router-dom';
+import categoriasRepository from '../../../repositories/categorias';
 
 
 function CadastroCategoria() {
-  const objeto = {
-    nome: '',
+  const history = useHistory()
+  const { handleChange, values} = useForm({
+    titulo: '',
     descricao: '',
     cor: '',
-  };
+  });
 
-  const { handleChange, values, clearForm} = useForm(objeto);
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URL = `${DOMINIO}/categorias`;
-    fetch(URL)
-      .then(async (respDoServer) => {
-        if(respDoServer.ok) {
-          const resposta = await respDoServer.json();
-          setCategorias(resposta);
-          return; 
-        }
-        throw new Error('Não foi possível pegar os dados');
-      })
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
   }, []);
 
   return (
     <PageDefault>
       <h1>Cadastro de Categoria</h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        // alert('Categoria cadastada com sucesso');
+
         setCategorias([...categorias, values]);
 
-        clearForm();
+        categoriasRepository.create({
+          titulo: values.titulo,
+          descricao: values.descricao,
+          cor: values.cor,
+        })
+          .then(() => {
+            console.log('Cadastrou com sucesso!');
+            history.push('/cadastro/video');
+          });
       }}
       >
 
         <FormField
-          label="Nome"
+          label="Título"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -66,14 +72,16 @@ function CadastroCategoria() {
         />
 
         <div>
-          <Button>Cadastrar</Button>
+          <Link to="/cadastro/video">
+            <Button renderAs="button">Voltar</Button>
+          </Link>
+
+          <Button type='submit' style={{background: '#00C86F', color: 'white'}}>Cadastrar</Button>
         </div>
       </form>
 
       {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
+        <div></div>
       )}
 
       <ul>

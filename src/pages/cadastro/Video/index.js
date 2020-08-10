@@ -57,7 +57,7 @@ function CadastroVideo() {
           value={values.titulo}
           onChange={handleChange}
         />
-
+        
         <FormField
           label="Url"
           type="text"
@@ -75,16 +75,13 @@ function CadastroVideo() {
         />
 
         <div>
-          <Button type='submit'>Cadastrar</Button>
+          <Link to="/cadastro/categoria">
+            <Button renderAs="button">Cadastrar Categoria</Button>
+          </Link>
+
+          <Button type='submit' style={{background: '#00C86F', color: 'white'}}>Cadastrar</Button>
         </div>
       </form>
-
-      <br />
-      <br />
-
-      <Link to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Link>
     </PageDefault>
   );
 }

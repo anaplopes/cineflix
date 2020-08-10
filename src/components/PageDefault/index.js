@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../Menu';
+import Header from '../Header';
 import Footer from '../Footer';
 import styled, { css } from 'styled-components';
 
@@ -19,7 +19,7 @@ const Main = styled.main`
 function PageDefault({ children, paddingAll }) {
     return (
         <>
-            <Menu />
+            <Header />
                 <Main paddingAll={paddingAll}>
                     {children}
                 </Main>

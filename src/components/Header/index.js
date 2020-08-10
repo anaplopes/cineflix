@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/Logo.png';
-import './Menu.css';
+import './Header.css';
 import Button from '../Button'
 //import ButtonLink from './components/ButtonLink';
 
 
-function Menu() {
+function Header() {
     return (
-        <nav className='Menu'>
+        <nav className='Header'>
             <Link to='/'>
                 <img className='Logo' src={Logo} alt='cineflix logo' />
             </Link>
@@ -18,4 +18,4 @@ function Menu() {
     );
 }
 
-export default Menu;
+export default Header;

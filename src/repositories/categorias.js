@@ -3,6 +3,23 @@ import config from '../config';
 
 const URL_CATEGORIES = `${config.DOMINIO}/categorias`;
 
+function create(objeto) {
+  return fetch(`${URL_CATEGORIES}?_embed=videos`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(objeto),
+  })
+      .then(async (respDoServer) => {
+          if(respDoServer.ok) {
+              const resposta = await respDoServer.json();
+              return resposta; 
+          }
+          throw new Error('Não foi possível cadastrar os dados');
+      });
+}
+
 function getAll() {
     return fetch(`${URL_CATEGORIES}`)
       .then(async (respDoServer) => {
@@ -29,4 +46,5 @@ function getAllWithVideos() {
 export default {
   getAll,
   getAllWithVideos,
+  create,
 };

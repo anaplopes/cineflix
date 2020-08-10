@@ -8,7 +8,7 @@
     }
   }
   
-  .Menu {
+  .Header {
     width: 100%;
     height: 90px;
     z-index: 100;
@@ -33,7 +33,7 @@
   }
   
   @media (max-width: 800px) {
-    .Menu {
+    .Header {
       height: 50px;
       justify-content: center;
     }
