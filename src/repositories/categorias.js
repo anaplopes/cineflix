@@ -3,7 +3,7 @@ import config from '../config';
 
 const URL_CATEGORIES = `${config.DOMINIO}/categorias`;
 
-function create(objeto) {
+async function create(objeto) {
   return fetch(`${URL_CATEGORIES}?_embed=videos`, {
       method: 'POST',
       headers: {
@@ -20,7 +20,7 @@ function create(objeto) {
       });
 }
 
-function getAll() {
+async function getAll() {
     return fetch(`${URL_CATEGORIES}`)
       .then(async (respDoServer) => {
         if (respDoServer.ok) {
@@ -32,7 +32,7 @@ function getAll() {
       });
 }
 
-function getAllWithVideos() {
+async function getAllWithVideos() {
     return fetch(`${URL_CATEGORIES}?_embed=videos`)
         .then(async (respDoServer) => {
             if(respDoServer.ok) {

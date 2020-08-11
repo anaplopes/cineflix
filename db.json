@@ -57,14 +57,20 @@
     {
       "titulo": "Nando Viana",
       "descricao": "stand up comedy do humorista Nando Viana",
-      "cor": "#00c86f",
+      "cor": "#00C86f",
       "id": 11
     },
     {
       "titulo": "Rafael Portugal",
       "descricao": "stand up comedy do humorista Rafael Portugal",
-      "cor": "#00c86f",
+      "cor": "#00C86f",
       "id": 12
+    },
+    {
+      "titulo": "Fábio Porchat",
+      "descricao": "stand up comedy do humorista Fábio Porchat",
+      "cor": "#00C86f",
+      "id": 13
     }
   ],
   "videos": [
@@ -393,16 +399,22 @@
       "url": "https://www.youtube.com/watch?v=GgLQZFOo0-w"
     },
     {
-      "titulo": "Preciso de um BORDÃO",
-      "url": "https://www.youtube.com/watch?v=gyOkWvUnofI",
-      "categoriaId": 11,
-      "id": 55
-    },
-    {
       "titulo": "EU COMIGO MESMO",
       "url": "https://www.youtube.com/watch?v=Faqeh0Qx9Y0",
       "categoriaId": 12,
       "id": 56
+    },
+    {
+      "titulo": "Resolvi tomar um VIAGRA",
+      "url": "https://www.youtube.com/watch?v=Rdope41fGrU",
+      "categoriaId": 11,
+      "id": 57
+    },
+    {
+      "titulo": "Nany People e as aventuras amorosas",
+      "url": "https://www.youtube.com/watch?v=NPfEQms3Koo",
+      "categoriaId": 13,
+      "id": 58
     }
   ]
 }

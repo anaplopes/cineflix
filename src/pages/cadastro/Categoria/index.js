@@ -31,8 +31,6 @@ function CadastroCategoria() {
 
       <form onSubmit={(event) => {
         event.preventDefault();
-        // alert('Categoria cadastada com sucesso');
-
         setCategorias([...categorias, values]);
 
         categoriasRepository.create({
@@ -41,7 +39,7 @@ function CadastroCategoria() {
           cor: values.cor,
         })
           .then(() => {
-            console.log('Cadastrou com sucesso!');
+            alert('Categoria cadastrada com sucesso!')
             history.push('/cadastro/video');
           });
       }}

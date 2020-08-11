@@ -3,7 +3,7 @@ import config from '../config';
 
 const URL_VIDEOS = `${config.DOMINIO}/videos`;
 
-function create(objeto) {
+async function create(objeto) {
     return fetch(`${URL_VIDEOS}?_embed=videos`, {
         method: 'POST',
         headers: {
